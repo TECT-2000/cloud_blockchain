@@ -1,0 +1,1 @@
+composer-rest-server -c admin@cloud-project -n never -u true -d y -w true

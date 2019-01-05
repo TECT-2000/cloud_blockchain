@@ -1,0 +1,15 @@
+query selectPVsByOwner{
+  description: "Select all pvs on their owner"
+  statement: SELECT org.example.projet.PV WHERE(owner==_$owner)
+}
+
+query selectPVsByBureau{
+  description: "Select all PVs by Bureau"
+  statement: SELECT org.example.projet.PV WHERE(bureau==_$nomBureau)   
+}
+
+query selectScrutateurByCandidat{
+  description:"Select all scrutators for a candidat"
+  statement: SELECT org.example.projet.Scrutateur WHERE 
+  (candidat==_$candidat)
+}
